@@ -1,0 +1,912 @@
+/* =========================================
+    Default Theme
+    ----------------------------------------
+    Fonts: Raleway & Open Sans
+    ----------------------------------------
+    Colors:
+        Moon Yellow:         #f4c613
+        Grey:                #212226
+        White Smoke:         #f4f4f4
+        White:               #fff
+        Black:               #000   
+============================================ */
+
+
+/* =========================================
+                Html, Body
+============================================ */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background:#100b1f;
+    overflow: hidden;
+}
+
+
+/* =========================================
+                Home
+============================================ */
+
+ #home {
+    height: 100vh;
+}
+
+
+#home-heading {
+    position: absolute;
+    text-align: center;
+    top:40%;
+    width: 100%;
+}
+
+
+#home-heading h2 {
+    color: rgb(206, 200, 200);
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0;
+    display: inline-block;
+}
+
+#home-heading h5{
+    color: rgb(206, 200, 200);
+    font-size: 25px;
+    display: inline-block;
+}
+
+.data{
+    color: rgb(206, 200, 200);
+    font-size: 17px;
+}
+.data a{
+    font-size: 20px;
+    padding: 7px;
+}
+
+.icons{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.icons a{
+    padding: 7px;
+}
+
+
+
+
+
+/* =========================================
+                Buttons
+============================================ */
+
+.btn-general {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #fff;
+    border: 2.5px solid #c29f12;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #c29f12;
+    border: 1px solid #c29f12;
+}
+
+.btn-yellow {
+    color: #fff;
+    border: 1px solid #c29f12;
+    background-color: #c29f12;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
+}
+
+/* ============================================
+        Timeline
+============================================= */
+
+#team{
+    background: #150f27;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20vh auto;
+  }
+
+#head{
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 14vh;
+}
+
+#head h4{
+    color: #f4c613;
+    font-weight: bold;
+}
+#head h1{
+    color: #fff;
+    font-weight: bolder;
+    
+}
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(220,220,220);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .contain {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .contain::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(220,220,220);
+    border: 4px solid #f4c613;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color:rgb(239, 240, 217);
+    position: relative;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(192, 186, 186, 0.596);
+  }
+
+  .content h4{
+      font-weight: bolder;
+      color: #725d08;
+  }
+
+  #company p{
+      font-weight: bold;
+      font-size: medium;
+  }
+  .content h5{
+      font-weight: bolder;
+  }
+
+  .content p{
+      font-weight:normal
+  }
+  
+
+
+/* =========================================
+        Vertical/Horizontal Headings
+============================================ */
+
+.vertical-heading h5 {
+    color: #f4c613;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -53px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.horizontal-heading h2 {
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+.horizontal-heading {
+    margin-bottom: 80px;
+    letter-spacing: 1.5px;
+}
+
+.horizontal-heading h4 {
+    font-size: 16px;
+    color: #f4c613;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.horizontal-heading h2 {
+    margin: 0;
+}
+
+
+/* =========================================
+                About 01
+============================================ */
+
+
+.about-me{
+    margin: 20vh auto;
+    padding: 80px 30px;
+    border-radius: 15px;
+    background-color: #090720;
+    -webkit-box-shadow: 0 0 15px rgba(192, 186, 186, 0.596);
+    box-shadow: 0 0 10px rgba(192, 186, 186, 0.596);
+}
+
+#about-left img{
+    margin-top: 40px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#about-right{
+    color:#fff;
+}
+
+#about-right h2{
+    color: #f4c613;
+    font-weight: bold;
+}
+
+#about-right h4{
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+                Social Icons
+============================================ */
+
+ul.social-list {
+    padding: 0px;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 3px;
+}
+
+ul.social-list li a {
+    border: 2px solid rgb(255, 255, 255);
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: white;
+    border-radius: 50%;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+    background: #5c72a0;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background: #3b5998;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background: #00aced;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+    background:#007bb5;
+    border-color: transparent;
+}
+
+
+
+/* =========================================
+                Skills
+============================================ */
+
+#skillsection{
+    margin: 14vh auto;
+}
+
+#service-head{
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 14vh auto;
+}
+
+#service-head h4{
+    color: #f4c613;
+    font-weight: bold;
+}
+
+#service-head h1{
+    color: #fff;
+    font-weight: bolder;
+}
+
+.skill {
+    margin: 10px 20px;
+}
+
+.skill h4 {
+    line-height: 62px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 0;
+    background: #efefef;
+    overflow: visible;
+}
+
+.progress-bar {
+    background: #f4c613;
+    position: relative;
+}
+
+.progress-bar span {
+    font-size: 11px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    background: #212226;
+    padding: 3px;
+    position: absolute;
+    left: 97%;
+    top: -47px;
+}
+
+.progress-bar span:before {
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 23%;
+}
+
+
+/* =========================================
+                Statement
+============================================ */
+
+#statement {
+    height: 25vh;
+    background: url("../img/tech/tech-statement.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+#statement .content-box-lg {
+    background: rgba(0, 0, 0, 0.3);
+    height: 25vh;
+}
+
+#tech-statement h3 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+#tech-statement h4 {
+    color: #493c08;
+    font-family: "Raleway", sans-serif;
+    margin-top: 8px;
+    
+}
+
+
+/* =========================================
+                Services 01
+============================================ */
+
+#services{
+    background: #100b1f;
+}
+
+#services-01{
+    margin: 10vh auto;
+}
+
+/* Float four columns side by side */
+.column {
+    color: #fff ;
+    float: left;
+    width: 30%;
+    margin: 0 10px;
+    padding: 0 10px;
+    letter-spacing: 1.5px;
+    line-height: 4vh;
+  }
+  
+  .column img{
+      height: 75px;
+      width: 75px;
+  }
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  
+  /* Style the counter cards */
+  .card {
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color:#090720;
+    -webkit-box-shadow: 0 0 4px rgba(192, 186, 186, 0.596);
+    box-shadow: 0 0 4px rgba(192, 186, 186, 0.596);
+  }
+
+  .card h5{
+    color: #f4c613;
+    margin-top:5vh;  
+    font-weight: bold;
+  }
+
+  .card h4{
+      margin-top: 5vh;
+  }
+/* =========================================
+                Pricing
+============================================ */
+
+#portfolio{
+    background: #150f27;
+}
+
+.project-head{
+    margin: 14vh auto;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 2px;
+}
+
+.project-head h4{
+    color: #f4c613;
+}
+
+.project-head h1{
+    font-weight: bolder;
+}
+
+.project-head h5{
+    margin-bottom: 30px;
+}
+
+
+.project-column {
+    color: #fff ;
+    float: left;
+    width: 30%;
+    margin: 20px 10px;
+    padding: 0 10px;
+    letter-spacing: 1.5px;
+    line-height: 4vh;
+  }
+
+.project-card {
+    border-radius: 3px;
+    padding: 16px;
+    height: 25vh;
+    text-align: left;
+    background-color:#212226;
+    -webkit-box-shadow: 0 0 3px rgba(192, 186, 186, 0.596);
+    box-shadow: 0 0 3px rgba(192, 186, 186, 0.596);
+}
+
+.project-card h3{
+    font-weight: bold;
+    margin-bottom: 4vh;
+}
+
+.project-card a{
+    font-weight: bold;
+}
+
+.project-card i{
+    color: #f4c613;
+    font-size: 14px;
+}
+
+.project-column img{
+    max-width: 100%;
+    height: 200px;
+}
+
+.project-column:hover{
+    transform: scale(1.08);
+}
+
+
+
+/* =========================================
+                Contact
+============================================ */
+
+
+/* Contact Left */
+
+
+.contact-head{
+    margin: 10vh auto;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.contact-head h4{
+    color: #f4c613;
+}
+
+#contact-left h2{
+    color:#f4c613;
+    letter-spacing: 1.5px;
+}
+
+#contact-left p {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin: 25px 0 20px 0;
+}
+
+ul.office-details {
+    list-style: none;
+    padding: 0;
+}
+
+ul.office-details li {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 12px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+ul.office-details li i {
+    font-size: 20px;
+    width: 45px;
+}
+
+#contact-left ul.social-list li a {
+    color: #212226;
+    border: 1px solid #212226;
+    text-align: center;
+}
+
+#contact-left ul.social-list li a:hover {
+    color: #fff;
+    border-color: transparent;
+}
+
+
+/* Contact Right */
+
+#contact-right {
+    padding: 25px 30px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+#contact-right h3 {
+    color: #f4c613;
+    font-size: 24px;
+}
+
+#contact-right p {
+    margin-bottom: 25px;
+}
+
+#contact-right form .form-control {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#contact-right form textarea.form-control {
+    min-height: 164px;
+}
+
+
+
+
+
+/* =========================================
+                Footer
+============================================ */
+
+footer {
+    background: #212226;
+    padding: 30px;
+}
+
+footer p {
+    color: #fff;
+    line-height: 20px;
+    margin: 0;
+}
+
+footer p span {
+    color: #f4c613;
+}
+
+
+/* =========================================
+                Navigation
+============================================ */
+
+.navbar {
+    background: #212226;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.site-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+.navbar-brand img{
+    height: 70px;
+    width: 70px;
+    
+}
+
+ul.navbar-nav>li>a {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav>li>a:hover,
+ul.navbar-nav>li>a:focus {
+    background: none;
+    color: #f4c613;
+}
+
+/* White Navigation */
+
+.white-nav-top {
+    background: #212226;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav>li>a {
+    color: #fff;
+}
+
+.white-nav-top ul.navbar-nav>li>a:hover,
+.white-nav-top ul.navbar-nav>li>a:focus {
+    color: #f4c613;
+}
+
+
+/* Scroll spy active state */
+
+.white-nav-top ul.navbar-nav>li.active>a {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+
+/* =========================================
+                Animation
+============================================ */
+
+#home-heading-1,
+#home-heading-2,
+#home-text,
+#home-btn,
+#arrow-down i {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+#home-heading-1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+#home-heading-2 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#home-text {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+#home-btn {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+#arrow-down i {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .contain {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .contain::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin: 20px auto;
+      }
+
+    .project-column{
+        width: 100%;
+        display: block;
+        margin: 20px auto;
+    }
+  }
+
+
+
+ /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #150f27; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
